@@ -24,17 +24,17 @@ async function getData (): Promise<any>{
     return list;
 }
 
-// async function startApp() {
-    // const booksData : Array<any>  = await getData();
-//     console.log('hola tio esto esla api')
+async function startApp() {
+    const booksData : Array<any>  = await getData();
+    const data: { name: any; old: any; new: any; update: any; }[] = []
 
-// // booksData.forEach(result => {
-   
-// //     const ourData = {name: result.list_name , old: result.oldest_published_date,new: result.newest_published_date, update: result.updated};
+    booksData.forEach(result => {
     
+        const ourData = {name: result.list_name , old: result.oldest_published_date,new: result.newest_published_date, update: result.updated};
+        data.push(ourData);
+    });
+    return data;
+}
 
-// // });
-// }
-
-export default getData();
+export default startApp;
 

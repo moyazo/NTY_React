@@ -1,11 +1,11 @@
-import React, { FC } from "react";
-import type { Props } from '../type';
-import './description.css';
+import { FC } from "react";
+import type { titleProps } from '../type';
 
-const Title: FC<Props>  = ({children}) => {
+const Title: FC<titleProps>  = ({ value }) => {
+
     return (
         <h4 className='cardTitle'>
-            
+            {value}
         </h4>
     )
 }

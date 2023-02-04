@@ -1,7 +1,11 @@
 import type { ReactNode } from "react";
 
-export type Props = {
+export type cardProps = {
     children?: ReactNode
+};
+
+export type titleProps = {
+    value:  string
 };
 
 
