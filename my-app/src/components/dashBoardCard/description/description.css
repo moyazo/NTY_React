@@ -1,0 +1,13 @@
+.detailDescription{
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: .1rem .1rem .1rem .1rem black;
+}
+.detailDescription:hover{
+    transform: scale(0.9);
+    transition: all 1s ease-out;
+}
+.detailDescription:not(:hover){
+    transform: scale(1);
+    transition: all 1s ease-out;
+}
