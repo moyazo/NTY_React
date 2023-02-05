@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { cardProps } from "./type";
 import Title from "./title/title";
+import Description from "./description/description";
+import Button from "../button/button";
 import startApp from "../../services/dashboard";
 import './card.css';
 
@@ -15,12 +17,13 @@ dataFromApi.then((value) => {
 const Card: FC<cardProps>  = () => {
     
     return (
-        <div className='textDetail'>
-                { data.map((element) => (
-                        <Title value={element.name} key={element.name} />
-                    ))
-                }
-        </div>
+        data.map((element) => (
+            <div className='textDetail' key={'textDetail'}>
+                <Title value={element.name} key={element.name} />
+                <Description value={element} key={element.new} />
+                <Button className="seeMore" key={'seeMore'} />
+                </div>
+            ))
     )
 }
 

@@ -1,7 +1,7 @@
 import { FC } from "react";
-import type { titleProps } from '../type';
+import type { Props } from '../type';
 
-const Title: FC<titleProps>  = ({ value }) => {
+const Title: FC<Props>  = ({ value }) => {
 
     return (
         <h4 className='cardTitle'>

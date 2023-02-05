@@ -4,7 +4,7 @@ export type cardProps = {
     children?: ReactNode
 };
 
-export type titleProps = {
+export type Props = {
     value:  string
 };
 
