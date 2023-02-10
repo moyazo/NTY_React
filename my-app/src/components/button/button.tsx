@@ -1,12 +1,15 @@
-import React, { FC } from "react";
-import type { Props } from './type';
+import { FC } from "react";
+import { CustomButton } from "../styles";
+import { buttonProps } from "./type";
 
-const Button: FC<Props>  = ({children,className}) => {
+
+const Button: FC<buttonProps> = ({children, onclick}) => {    
     return (
-        <button className='seeMore'>
-            SEE MORE
-        </button>
+        <CustomButton onClick={onclick} className="seeMoreButton">
+            {'SEE MORE'}
+        </CustomButton>
     )
 }
+
 
 export default Button;

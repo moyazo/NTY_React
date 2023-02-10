@@ -1,9 +1,6 @@
-import type { ReactNode } from "react";
+import { ReactNode } from "react"
 
-export type Props = {
+export type buttonProps = {
     children?: ReactNode
-
-    className: string
-};
-
-
+    onclick?: () => void
+}
